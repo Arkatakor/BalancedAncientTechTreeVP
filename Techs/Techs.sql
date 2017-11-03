@@ -1,4 +1,9 @@
 -----------------------------------------------------------------------
+--	TRAPPING
+-----------------------------------------------------------------------
+DELETE FROM Technologies WHERE Type = 'TECH_TRAPPING';
+
+-----------------------------------------------------------------------
 --	FISHING 
 -----------------------------------------------------------------------
 INSERT INTO Technologies (Type, Cost, Description, Civilopedia, Help, Era, Trade, GoodyTech, GridX, GridY, Quote, PortraitIndex, IconAtlas, AudioIntro, AudioIntroHeader) 
@@ -115,6 +120,22 @@ INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_WOOD_WORKING_QUOTE'
 '[NEWLINE][TAB][TAB]"The best carpenters make the fewest chips."[NEWLINE][TAB][TAB]  - English proverb, c.1500s[NEWLINE][TAB]');
 
 INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_WOOD_WORKING_DESC', 'Along with stone, clay and animal parts, wood was one of the first materials worked by early humans. Microwear analysis of the Mousterian stone tools used by the Neanderthals show that many were used to work wood. The development of civilization was closely tied to the development of increasingly greater degrees of skill in working these materials.[NEWLINE][NEWLINE]Among early finds of wooden tools are the worked sticks from Kalambo Falls, Clacton-on-Sea and Lehringen. The spears from Schöningen (Germany) provide some of the first examples of wooden hunting gear. Flint tools were used for carving. Since Neolithic times, carved wooden vessels are known, for example, from the Linear Pottery culture wells at Kückhofen and Eythra.[NEWLINE][NEWLINE]Examples of Bronze Age wood-carving include tree trunks worked into coffins from northern Germany and Denmark and wooden folding-chairs. The site of Fellbach-Schmieden in Germany has provided fine examples of wooden animal statues from the Iron Age Wooden idols from the La Tène period are known from a sanctuary at the source of the Seine in France.');
+
+-----------------------------------------------------------------------
+--	MILITARY THEORY
+-----------------------------------------------------------------------
+INSERT INTO Technologies (Type, Cost, Description, Civilopedia, Help, Era, Trade, GoodyTech, GridX, GridY, Quote, PortraitIndex, IconAtlas, AudioIntro, AudioIntroHeader) 
+VALUES ('TECH_MILITARY_THEORY', 80, 'TXT_KEY_TECH_MILITARY_THEORY_TITLE', 'TXT_KEY_TECH_MILITARY_THEORY_DESC', 'TXT_KEY_TECH_MILITARY_THEORY_HELP', 'ERA_ANCIENT', 1, 0, 2, 6, 
+'TXT_KEY_TECH_MILITARY_THEORY_QUOTE', 0, 'ANCIENT_TECH_ICON_ATLAS', 'AS2D_TECH_MILITARY_THEORY', 'AS2D_TECH_MILITARY_THEORY');
+
+INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_MILITARY_THEORY_TITLE', 'Military Theory');
+INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_MILITARY_THEORY_HELP', 
+'Allows you to build the [COLOR_POSITIVE_TEXT]Barracks[ENDCOLOR], an essential building for early war.');
+
+INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_MILITARY_THEORY_QUOTE', 
+'[NEWLINE][TAB][TAB]"The supreme art of war is to subdue the enemy without fighting."[NEWLINE][TAB][TAB]  - Sun Tzu[NEWLINE][TAB]');
+
+INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_MILITARY_THEORY_DESC', 'Military theory is the analysis of normative behavior and trends in military affairs and military history, beyond simply describing events in war, Military theories, especially since the influence of Clausewitz in the nineteenth century, attempt to encapsulate the complex cultural, political and economic relationships between societies and the conflicts they create. Theories and conceptions of warfare have varied in different places throughout human history. The Chinese Sun Tzu is recognized by scholars to be one of the earliest military theorists. His now-iconic Art of War laid the foundations for operational planning, tactics, strategy and logistics. In India, Chanakya (350 – 275 BCE) laid the foundations of military theory through his seminal text called Arthashastra. While the views of Clausewitz, Sun Tzu and Kautilya are not directly applicable to the modern battlefield, they are still referenced and acknowledged by military theorists for the insights they provide, which are then adapted to modern times.');
 
 --	Audio
 --INSERT INTO Audio_Sounds (SoundID, Filename, LoadType) 
