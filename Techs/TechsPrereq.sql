@@ -32,15 +32,15 @@ INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_THE_WHEE
 INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_WOOD_WORKING', 'TECH_STONE_TOOLS');
 INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_MINING', 'TECH_STONE_TOOLS');
 
-											NEXT ERA
-Fishing 		--> 					Sailing	--> 				->Optics
-Agriculture 	-->	Pottery			-->	Trade						-> Writing	
-Mysticism		-->					-->	Trade			
-Hunting			-->	Animal Husbandry--> Calender
+--											NEXT ERA
+--Fishing 		--> 					Sailing	--> 				->Optics
+--Agriculture 	-->	Pottery			-->	Trade						-> Writing	
+--Mysticism		-->					-->	Trade			
+--Hunting		-->	Animal Husbandry--> Calender
 									--> Calender (archery)
 				-->	Archery (artemetis) --> Military Theory
 									--> Military Theory (the wheel)
-Stone Tools		--> The wheel		--> Construction
+--Stone Tools	--> The wheel		--> Construction
 				--> Wood Working	--> Construction		
 				-->	Mining			-->	Bronze Working
 
