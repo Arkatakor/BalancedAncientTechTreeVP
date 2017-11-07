@@ -3,11 +3,11 @@
 <GameData>
 	<BuildingClasses>
 		<!--Elder Council-->
-		<Row>
-			<Type>BUILDINGCLASS_ELDER_COUNCIL</Type>
-			<DefaultBuilding>BUILDING_ELDER_COUNCIL</DefaultBuilding>
-			<Description>TXT_KEY_BUILDING_ELDER_COUNCIL</Description>
-		</Row>
+		<!-- <Row> -->
+			<!-- <Type>BUILDINGCLASS_ELDER_COUNCIL</Type> -->
+			<!-- <DefaultBuilding>BUILDING_ELDER_COUNCIL</DefaultBuilding> -->
+			<!-- <Description>TXT_KEY_BUILDING_ELDER_COUNCIL</Description> -->
+		<!-- </Row> -->
 
 		<!--Furrier-->
 		<Row>

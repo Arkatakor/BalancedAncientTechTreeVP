@@ -3,6 +3,8 @@ UPDATE Technologies SET Cost = 35 WHERE GridX = 0
 UPDATE Buildings SET PrereqTech = 'TECH_MYSTICISM' WHERE BuildingClass = 'BUILDINGCLASS_SHRINE';
 --	Set monument to require stone tools
 UPDATE Buildings SET PrereqTech = 'TECH_STONE_TOOLS' WHERE BuildingClass = 'BUILDINGCLASS_MONUMENT';
+--	VP's 'council' is actually the grove building.
+UPDATE Buildings SET PrereqTech = 'TECH_MYSTICISM' WHERE BuildingType = 'BUILDING_GROVE';
 
 --	Remove fish bonus from lighthouse
 DELETE FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_LIGHTHOUSE';

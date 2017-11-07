@@ -3,24 +3,24 @@
 <GameData>
 	<Language_en_US>
 		<!--Elder Council-->
-		<Row Tag="TXT_KEY_BUILDING_ELDER_COUNCIL">
-			<Text>Elder Council</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_ELDER_COUNCIL_STRATEGY">
-			<Text>
-				Elder councils grant an early science boost by generating 1 [ICON_SCIENCE] Science.  Obsolete with Education.
-			</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDINGS_ELDER_COUNCIL_DESC">
-			<Text>
-				Oral tradition, oral culture and oral lore are messages or testimony transmitted orally from one generation to another.  The messages or testimony are verbally transmitted in speech or song and may take the form, for example, of folktales, sayings, ballads, songs, or chants. In this way, it is possible for a society to transmit oral history, oral literature, oral law and other knowledges across generations without a writing system.
-			</Text>
-		</Row>
-		<Row Tag="TXT_KEY_BUILDING_ELDER_COUNCIL_HELP">
-			<Text>
-				Early science building.  Obsolete with Education.
-			</Text>
-		</Row>
+		<!-- <Row Tag="TXT_KEY_BUILDING_ELDER_COUNCIL"> -->
+			<!-- <Text>Elder Council</Text> -->
+		<!-- </Row> -->
+		<!-- <Row Tag="TXT_KEY_BUILDING_ELDER_COUNCIL_STRATEGY"> -->
+			<!-- <Text> -->
+				<!-- Elder councils grant an early science boost by generating 1 [ICON_SCIENCE] Science.  Obsolete with Education. -->
+			<!-- </Text> -->
+		<!-- </Row> -->
+		<!-- <Row Tag="TXT_KEY_BUILDINGS_ELDER_COUNCIL_DESC"> -->
+			<!-- <Text> -->
+				<!-- Oral tradition, oral culture and oral lore are messages or testimony transmitted orally from one generation to another.  The messages or testimony are verbally transmitted in speech or song and may take the form, for example, of folktales, sayings, ballads, songs, or chants. In this way, it is possible for a society to transmit oral history, oral literature, oral law and other knowledges across generations without a writing system. -->
+			<!-- </Text> -->
+		<!-- </Row> -->
+		<!-- <Row Tag="TXT_KEY_BUILDING_ELDER_COUNCIL_HELP"> -->
+			<!-- <Text> -->
+				<!-- Early science building.  Obsolete with Education. -->
+			<!-- </Text> -->
+		<!-- </Row> -->
 
 		<!--Furrier-->
 		<Row Tag="TXT_KEY_BUILDING_FURRIER">
