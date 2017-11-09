@@ -1,4 +1,5 @@
 UPDATE Technologies SET Cost = 35 WHERE GridX = 0
+
 --	Set shrine requirement to mysticism instead of pottery
 UPDATE Buildings SET PrereqTech = 'TECH_MYSTICISM' WHERE BuildingClass = 'BUILDINGCLASS_SHRINE';
 --	Set monument to require stone tools
@@ -13,12 +14,6 @@ UPDATE Language_en_US SET Text = '+1 [ICON_FOOD] Food from Coast and Ocean Tiles
 
 UPDATE Language_en_US SET Text = 'The Lighthouse can only be constructed in a city next to a coastal tile. It increases the [ICON_FOOD] Food output of water tiles and it increases the [ICON_PRODUCTION] Production output of all sea resources.' WHERE Tag = 'TXT_KEY_BUILDING_LIGHTHOUSE_STRATEGY';
 
-UPDATE Buildings
-SET PrereqTech = 'TECH_MILITARY_THEORY'
-WHERE Type = 'BUILDING_BARRACKS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
-
-UPDATE Builds
-SET PrereqTech = 'TECH_MILITARY_THEORY' WHERE Type = 'BUILD_ENCAMPMENT_SHOSHONE';
 -----------------------------------------------------------------------
 --	VP ARCHERY: RESETTING TEXT TO ORIGINAL VALUES
 -----------------------------------------------------------------------
@@ -36,8 +31,26 @@ SET Text = 'Allows you to build the [COLOR_POSITIVE_TEXT]Barracks[ENDCOLOR], an 
 WHERE Tag = 'TXT_KEY_TECH_ARCHERY_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 -----------------------------------------------------------------------
---	VP MILITARY THEORY: Adding units to newly created tech
+--	SAILING: (VP HORSEBACK RIDING)
 -----------------------------------------------------------------------
+
+UPDATE Technologies
+SET PrereqTech = 'TECH_FISHING' 
+WHERE Type = 'TECH_HORSEBACK_RIDING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+UPDATE Units SET PrereqTech = 'TECH_HORSEBACK_RIDING' WHERE Type = 'UNIT_GALLEY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+--	Galley, Embarkation
+-----------------------------------------------------------------------
+--	MILITARY THEORY: Adding units to newly created tech
+-----------------------------------------------------------------------
+
+UPDATE Buildings
+SET PrereqTech = 'TECH_MILITARY_THEORY'
+WHERE Type = 'BUILDING_BARRACKS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
+
+UPDATE Builds
+SET PrereqTech = 'TECH_MILITARY_THEORY' WHERE Type = 'BUILD_ENCAMPMENT_SHOSHONE';
 
 UPDATE Units SET PrereqTech = 'TECH_MILITARY_THEORY' WHERE Type = 'UNIT_SONGHAI_MUSLIMCAVALRY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );	
 UPDATE Units SET PrereqTech = 'TECH_MILITARY_THEORY' WHERE Type = 'UNIT_GREEK_COMPANIONCAVALRY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
