@@ -38,7 +38,24 @@ UPDATE Technologies
 SET PrereqTech = 'TECH_FISHING' 
 WHERE Type = 'TECH_HORSEBACK_RIDING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
+--Galley
 UPDATE Units SET PrereqTech = 'TECH_HORSEBACK_RIDING' WHERE Type = 'UNIT_GALLEY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+--Embarkation
+UPDATE UnitPromotions SET TechPrereq = 'TECH_HORSEBACK_RIDING' WHERE Type = 'PROMOTION_EMBARKATION' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+UPDATE UnitPromotions SET TechPrereq = 'TECH_HORSEBACK_RIDING' WHERE Type = 'PROMOTION_DEFENSIVE_EMBARKATION' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+-----------------------------------------------------------------------
+--	OPTICS: (VP SAILING)
+-----------------------------------------------------------------------
+
+UPDATE Technologies
+SET PrereqTech = 'TECH_HORSEBACK_RIDING' 
+WHERE Type = 'TECH_OPTICS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+UPDATE Language_en_US
+SET Text = 'Optics'
+WHERE Tag = 'TXT_KEY_TECH_OPTICS_TITLE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 --	Galley, Embarkation
 -----------------------------------------------------------------------
