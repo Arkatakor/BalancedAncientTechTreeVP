@@ -26,7 +26,7 @@
 			<Type>BUILDING_FURRIER</Type>
 			<BuildingClass>BUILDINGCLASS_FURRIER</BuildingClass>
 			<Cost>75</Cost>
-			<PrereqTech>TECH_TRAPPING</PrereqTech>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
 			<Help>TXT_KEY_BUILDING_FURRIER_HELP</Help>
 			<Description>TXT_KEY_BUILDING_FURRIER</Description>
 			<Civilopedia>TXT_KEY_BUILDINGS_FURRIER_DESC</Civilopedia>
