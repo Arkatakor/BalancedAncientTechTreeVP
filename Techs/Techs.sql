@@ -1,7 +1,11 @@
 -----------------------------------------------------------------------
 --	TRAPPING
 -----------------------------------------------------------------------
-DELETE FROM Technologies WHERE Type = 'TECH_TRAPPING';
+DELETE FROM Technologies WHERE Type = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+DELETE FROM Technology_PrereqTechs WHERE PrereqTech = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+DELETE FROM Technology_PrereqTechs WHERE PrereqTech = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+DELETE FROM Technology_PrereqTechs WHERE TechType = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+DELETE FROM Technology_Flavors TechType = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 -----------------------------------------------------------------------
 --	FISHING 
