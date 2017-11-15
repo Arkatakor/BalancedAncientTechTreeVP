@@ -1,13 +1,4 @@
 -----------------------------------------------------------------------
---	TRAPPING
------------------------------------------------------------------------
-DELETE FROM Technologies WHERE Type = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-DELETE FROM Technology_PrereqTechs WHERE PrereqTech = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-DELETE FROM Technology_PrereqTechs WHERE PrereqTech = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-DELETE FROM Technology_PrereqTechs WHERE TechType = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-DELETE FROM Technology_Flavors TechType = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-
------------------------------------------------------------------------
 --	FISHING 
 -----------------------------------------------------------------------
 INSERT INTO Technologies (Type, Cost, Description, Civilopedia, Help, Era, Trade, GoodyTech, GridX, GridY, Quote, PortraitIndex, IconAtlas, AudioIntro, AudioIntroHeader) 
@@ -72,7 +63,7 @@ VALUES ('TECH_MYSTICISM', 20, 'TXT_KEY_TECH_MYSTICISM_TITLE', 'TXT_KEY_TECH_MYST
 
 INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_MYSTICISM_TITLE', 'Mysticism');
 INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_MYSTICISM_HELP', 
-'Allows you to build the council and shrine.  Also leads to writing.');
+'Allows you to build the elder council and shrine.  Also leads to writing.');
 
 INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_MYSTICISM_QUOTE', 
 '[NEWLINE][TAB][TAB]"Nature herself has imprinted on the minds of all the idea of God."[NEWLINE][TAB][TAB]  - Cicero[NEWLINE][TAB]');
@@ -125,8 +116,15 @@ INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_WOOD_WORKING_QUOTE'
 
 INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_WOOD_WORKING_DESC', 'Along with stone, clay and animal parts, wood was one of the first materials worked by early humans. Microwear analysis of the Mousterian stone tools used by the Neanderthals show that many were used to work wood. The development of civilization was closely tied to the development of increasingly greater degrees of skill in working these materials.[NEWLINE][NEWLINE]Among early finds of wooden tools are the worked sticks from Kalambo Falls, Clacton-on-Sea and Lehringen. The spears from Schöningen (Germany) provide some of the first examples of wooden hunting gear. Flint tools were used for carving. Since Neolithic times, carved wooden vessels are known, for example, from the Linear Pottery culture wells at Kückhofen and Eythra.[NEWLINE][NEWLINE]Examples of Bronze Age wood-carving include tree trunks worked into coffins from northern Germany and Denmark and wooden folding-chairs. The site of Fellbach-Schmieden in Germany has provided fine examples of wooden animal statues from the Iron Age Wooden idols from the La Tène period are known from a sanctuary at the source of the Seine in France.');
 
+--	Audio
+--INSERT INTO Audio_Sounds (SoundID, Filename, LoadType) 
+--VALUES ('SND_TECH_WOOD_WORKING', 'TechMysticism', 'DynamicResident');
+
+--INSERT INTO Audio_2DSounds (ScriptID, SoundID, SoundType, MinVolume, MaxVolume) 
+--VALUES ('AS2D_TECH_WOOD_WORKING', 'SND_TECH_WOOD_WORKING', 'GAME_SPEECH', 80, 80);
+
 -----------------------------------------------------------------------
---	MILITARY THEORY
+--	VP: MILITARY THEORY
 -----------------------------------------------------------------------
 INSERT INTO Technologies (Type, Cost, Description, Civilopedia, Help, Era, Trade, GoodyTech, GridX, GridY, Quote, PortraitIndex, IconAtlas, AudioIntro, AudioIntroHeader) 
 VALUES ('TECH_MILITARY_THEORY', 80, 'TXT_KEY_TECH_MILITARY_THEORY_TITLE', 'TXT_KEY_TECH_MILITARY_THEORY_DESC', 'TXT_KEY_TECH_MILITARY_THEORY_HELP', 'ERA_ANCIENT', 1, 0, 2, 6, 
@@ -141,11 +139,18 @@ INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_MILITARY_THEORY_QUO
 
 INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_MILITARY_THEORY_DESC', 'Military theory is the analysis of normative behavior and trends in military affairs and military history, beyond simply describing events in war, Military theories, especially since the influence of Clausewitz in the nineteenth century, attempt to encapsulate the complex cultural, political and economic relationships between societies and the conflicts they create. Theories and conceptions of warfare have varied in different places throughout human history. The Chinese Sun Tzu is recognized by scholars to be one of the earliest military theorists. His now-iconic Art of War laid the foundations for operational planning, tactics, strategy and logistics. In India, Chanakya (350 – 275 BCE) laid the foundations of military theory through his seminal text called Arthashastra. While the views of Clausewitz, Sun Tzu and Kautilya are not directly applicable to the modern battlefield, they are still referenced and acknowledged by military theorists for the insights they provide, which are then adapted to modern times.');
 
---	Audio
---INSERT INTO Audio_Sounds (SoundID, Filename, LoadType) 
---VALUES ('SND_TECH_WOOD_WORKING', 'TechMysticism', 'DynamicResident');
+-----------------------------------------------------------------------
+--	VP: MYSTICISM
+-----------------------------------------------------------------------
+UPDATE Language_en_US SET Text = 'Allows you to build the elder council and shrine.  Also leads to writing.' 
+WHERE Tag = 'TXT_KEY_TECH_MYSTICISM_HELP';
 
---INSERT INTO Audio_2DSounds (ScriptID, SoundID, SoundType, MinVolume, MaxVolume) 
---VALUES ('AS2D_TECH_WOOD_WORKING', 'SND_TECH_WOOD_WORKING', 'GAME_SPEECH', 80, 80);
 
-
+-----------------------------------------------------------------------
+--	VP: TRAPPING (REMOVAL)
+-----------------------------------------------------------------------
+DELETE FROM Technologies WHERE Type = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+DELETE FROM Technology_PrereqTechs WHERE PrereqTech = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+DELETE FROM Technology_PrereqTechs WHERE PrereqTech = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+DELETE FROM Technology_PrereqTechs WHERE TechType = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+DELETE FROM Technology_Flavors TechType = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );

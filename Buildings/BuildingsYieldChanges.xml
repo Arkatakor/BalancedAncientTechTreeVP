@@ -3,11 +3,11 @@
 <GameData>
 	<Building_YieldChanges>
 		<!--Elder Council-->
-		<!-- <Row> -->
-			<!-- <BuildingType>BUILDING_ELDER_COUNCIL</BuildingType> -->
-			<!-- <YieldType>YIELD_SCIENCE</YieldType> -->
-			<!-- <Yield>1</Yield> -->
-		<!-- </Row> -->
+		<Row>
+			<BuildingType>BUILDING_ELDER_COUNCIL</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
 
 		<!--Furrier-->
 		<Row>

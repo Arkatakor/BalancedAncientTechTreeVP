@@ -4,8 +4,6 @@ UPDATE Technologies SET Cost = 35 WHERE GridX = 0
 UPDATE Buildings SET PrereqTech = 'TECH_MYSTICISM' WHERE BuildingClass = 'BUILDINGCLASS_SHRINE';
 --	Set monument to require stone tools
 UPDATE Buildings SET PrereqTech = 'TECH_STONE_TOOLS' WHERE BuildingClass = 'BUILDINGCLASS_MONUMENT';
---	VP's 'council' is actually the grove building.
-UPDATE Buildings SET PrereqTech = 'TECH_MYSTICISM' WHERE BuildingType = 'BUILDING_GROVE';
 
 --	Remove fish bonus from lighthouse
 DELETE FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_LIGHTHOUSE';
@@ -15,7 +13,7 @@ UPDATE Language_en_US SET Text = '+1 [ICON_FOOD] Food from Coast and Ocean Tiles
 UPDATE Language_en_US SET Text = 'The Lighthouse can only be constructed in a city next to a coastal tile. It increases the [ICON_FOOD] Food output of water tiles and it increases the [ICON_PRODUCTION] Production output of all sea resources.' WHERE Tag = 'TXT_KEY_BUILDING_LIGHTHOUSE_STRATEGY';
 
 -----------------------------------------------------------------------
---	VP ARCHERY: RESETTING TEXT TO ORIGINAL VALUES
+--	VP: ARCHERY: RESETTING TEXT TO ORIGINAL VALUES
 -----------------------------------------------------------------------
 
 UPDATE Language_en_US
@@ -31,7 +29,7 @@ SET Text = 'Allows you to build the [COLOR_POSITIVE_TEXT]Barracks[ENDCOLOR], an 
 WHERE Tag = 'TXT_KEY_TECH_ARCHERY_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 -----------------------------------------------------------------------
---	SAILING: (VP HORSEBACK RIDING)
+--	VP: SAILING: (VP HORSEBACK RIDING)
 -----------------------------------------------------------------------
 
 UPDATE Technologies
@@ -46,7 +44,7 @@ UPDATE UnitPromotions SET TechPrereq = 'TECH_SAILING' WHERE Type = 'PROMOTION_EM
 UPDATE UnitPromotions SET TechPrereq = 'TECH_SAILING' WHERE Type = 'PROMOTION_DEFENSIVE_EMBARKATION' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 -----------------------------------------------------------------------
---	OPTICS: (VP SAILING)
+--	VP: OPTICS: (VP SAILING)
 -----------------------------------------------------------------------
 
 UPDATE Technologies
@@ -58,7 +56,7 @@ SET Text = 'Optics'
 WHERE Tag = 'TXT_KEY_TECH_OPTICS_TITLE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 -----------------------------------------------------------------------
---	TRADE: (VP HORSEBACK RIDING)
+--	VP: TRADE: (VP HORSEBACK RIDING)
 -----------------------------------------------------------------------
 
 --	Insert new prereq techs for trade 
@@ -66,7 +64,7 @@ INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_HORSEBAC
 INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_HORSEBACK_RIDING', 'TECH_MYSTICISM');
 
 -----------------------------------------------------------------------
---	MILITARY THEORY: Adding building and units to newly created tech
+--	VP: MILITARY THEORY: Adding building and units to newly created tech
 -----------------------------------------------------------------------
 UPDATE Buildings
 SET PrereqTech = 'TECH_MILITARY_THEORY'
@@ -81,3 +79,14 @@ UPDATE Units SET PrereqTech = 'TECH_MILITARY_THEORY' WHERE Type = 'UNIT_HORSEMAN
 UPDATE Units SET PrereqTech = 'TECH_MILITARY_THEORY' WHERE Type = 'UNIT_CARTHAGINIAN_FOREST_ELEPHANT' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );	
 UPDATE Units SET PrereqTech = 'TECH_MILITARY_THEORY' WHERE Type = 'UNIT_ASSYRIAN_SIEGE_TOWER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
+-----------------------------------------------------------------------
+--	VP: ELDER COUNCIL 
+-----------------------------------------------------------------------
+DELETE FROM Buildings where Type = 'BUILDING_ELDER_COUNCIL';
+DELETE FROM BuildingClasses where Type = 'BUILDINGCLASS_ELDER_COUNCIL';
+DELETE FROM Building_Flavors where BuildingType = 'BUILDING_ELDER_COUNCIL';
+DELETE FROM Language_en_US where Tag LIKE '%ELDER_COUNCIL%';
+DELETE FROM Building_YieldChanges where BuildingType = 'BUILDING_ELDER_COUNCIL';
+
+--	VP's 'council' is actually the grove building.
+UPDATE Buildings SET PrereqTech = 'TECH_MYSTICISM' WHERE BuildingType = 'BUILDING_GROVE';

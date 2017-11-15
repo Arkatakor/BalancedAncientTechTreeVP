@@ -3,11 +3,11 @@
 <GameData>
 	<Building_Flavors>
 		<!--Elder Council-->
-		<!-- <Row> -->
-			<!-- <BuildingType>BUILDING_ELDER_COUNCIL</BuildingType> -->
-			<!-- <FlavorType>FLAVOR_SCIENCE</FlavorType> -->
-			<!-- <Flavor>10</Flavor> -->
-		<!-- </Row> -->
+		<Row>
+			<BuildingType>BUILDING_ELDER_COUNCIL</BuildingType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
 
 		<!--Furrier-->
 		<Row>
