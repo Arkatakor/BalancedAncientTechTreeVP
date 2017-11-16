@@ -16,37 +16,18 @@ WHERE Tag = 'TXT_KEY_BUILDING_LIGHTHOUSE_HELP';
 UPDATE Language_en_US SET Text = 'The Lighthouse can only be constructed in a city next to a coastal tile. It increases the [ICON_FOOD] Food output of water tiles and it increases the [ICON_PRODUCTION] Production output of all sea resources.' 
 WHERE Tag = 'TXT_KEY_BUILDING_LIGHTHOUSE_STRATEGY';
 
-
 -----------------------------------------------------------------------
---	SAILING: (VP HORSEBACK RIDING)
+--	VP: OPTICS: (VP OPTICS)
 -----------------------------------------------------------------------
-
---Galley
-UPDATE Units SET PrereqTech = 'TECH_SAILING' WHERE Type = 'UNIT_GALLEY' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-
---Embarkation
-UPDATE UnitPromotions SET TechPrereq = 'TECH_SAILING' WHERE Type = 'PROMOTION_EMBARKATION' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-UPDATE UnitPromotions SET TechPrereq = 'TECH_SAILING' WHERE Type = 'PROMOTION_DEFENSIVE_EMBARKATION' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-
------------------------------------------------------------------------
---	OPTICS: (VP SAILING)
------------------------------------------------------------------------
-
-UPDATE Technologies
-SET PrereqTech = 'TECH_SAILING' 
-WHERE Type = 'TECH_OPTICS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 UPDATE Language_en_US
 SET Text = 'Optics'
 WHERE Tag = 'TXT_KEY_TECH_OPTICS_TITLE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 -----------------------------------------------------------------------
---	TRADE: (VP HORSEBACK RIDING)
+--	VP: TRADE: (VP HORSEBACK RIDING)
 -----------------------------------------------------------------------
-
---	Insert new prereq techs for trade 
-INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_HORSEBACK_RIDING', 'TECH_POTTERY')
-INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_HORSEBACK_RIDING', 'TECH_MYSTICISM');
+UPDATE Buildings SET PrereqTech = 'TECH_HORSEBACK_RIDING' WHERE BuildingClass = 'BUILDINGCLASS_FURRIER';
 
 -----------------------------------------------------------------------
 --	VP: MILITARY THEORY: Adding building and units to newly created tech
