@@ -4,8 +4,6 @@ UPDATE Technologies SET Cost = 35 WHERE GridX = 0
 UPDATE Buildings SET PrereqTech = 'TECH_MYSTICISM' WHERE BuildingClass = 'BUILDINGCLASS_SHRINE';
 --	Set monument to require stone tools
 UPDATE Buildings SET PrereqTech = 'TECH_STONE_TOOLS' WHERE BuildingClass = 'BUILDINGCLASS_MONUMENT';
---	VP's 'council' is actually the grove building.
-UPDATE Buildings SET PrereqTech = 'TECH_MYSTICISM' WHERE BuildingType = 'BUILDING_GROVE';
 
 --	Remove fish bonus from lighthouse
 DELETE FROM Building_ResourceYieldChanges WHERE BuildingType = 'BUILDING_LIGHTHOUSE';
@@ -15,6 +13,18 @@ WHERE Tag = 'TXT_KEY_BUILDING_LIGHTHOUSE_HELP';
 
 UPDATE Language_en_US SET Text = 'The Lighthouse can only be constructed in a city next to a coastal tile. It increases the [ICON_FOOD] Food output of water tiles and it increases the [ICON_PRODUCTION] Production output of all sea resources.' 
 WHERE Tag = 'TXT_KEY_BUILDING_LIGHTHOUSE_STRATEGY';
+
+--===================================================================--
+-----------------------------------------------------------------------
+-- 					VP UPDATES 
+-----------------------------------------------------------------------
+--===================================================================--
+
+-----------------------------------------------------------------------
+--	VP: MYSTICISM
+-----------------------------------------------------------------------
+--	VP's 'council' is actually the grove building.
+UPDATE Buildings SET PrereqTech = 'TECH_MYSTICISM' WHERE BuildingType = 'BUILDING_GROVE';
 
 -----------------------------------------------------------------------
 --	VP: OPTICS: (VP OPTICS)
