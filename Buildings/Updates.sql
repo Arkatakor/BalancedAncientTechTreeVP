@@ -1,5 +1,3 @@
-UPDATE Technologies SET Cost = 35 WHERE GridX = 0
-
 --	Set shrine requirement to mysticism instead of pottery
 UPDATE Buildings SET PrereqTech = 'TECH_MYSTICISM' WHERE BuildingClass = 'BUILDINGCLASS_SHRINE';
 --	Set monument to require stone tools
@@ -19,6 +17,8 @@ WHERE Tag = 'TXT_KEY_BUILDING_LIGHTHOUSE_STRATEGY';
 -- 					VP UPDATES 
 -----------------------------------------------------------------------
 --===================================================================--
+
+UPDATE Technologies SET Cost = 35 WHERE GridX = 0
 
 -----------------------------------------------------------------------
 --	VP: MYSTICISM
