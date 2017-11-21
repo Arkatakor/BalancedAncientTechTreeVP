@@ -17,3 +17,8 @@ UPDATE Technologies Set GridY = 6 WHERE Type = 'TECH_THE_WHEEL';
 UPDATE Technologies Set GridX = 1 WHERE Type = 'TECH_ARCHERY';
 UPDATE Technologies Set GridY = 1 WHERE Type = 'TECH_POTTERY';
 UPDATE Technologies Set GridY = 8 WHERE Type = 'TECH_MINING';
+
+-----------------------------------------------------------------------
+--	TIER 3 TECHS
+-----------------------------------------------------------------------
+UPDATE Technologies Set GridY = 0 WHERE Type = 'TECH_SAILING';
