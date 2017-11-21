@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # ModBuddy Solution File, Format Version 11.00
-Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "BalancedAncientTechTreeVP", "BalancedAncientTechTreeVP.civ5proj", "{807724B2-63F5-4D21-83FC-051E2A9FDA8A}"
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "BalancedAncientTechTreeVP", "BalancedAncientTechTreeVP\BalancedAncientTechTreeVP.civ5proj", "{807724B2-63F5-4D21-83FC-051E2A9FDA8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
