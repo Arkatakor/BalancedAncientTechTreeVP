@@ -98,8 +98,8 @@ WHERE TechType = 'TECH_BRONZE_WORKING' AND EXISTS (SELECT * FROM COMMUNITY WHERE
 --DELETE FROM Technology_PrereqTechs 
 --WHERE TechType = 'TECH_OPTICS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
---DELETE FROM Technology_PrereqTechs 
---WHERE TechType = 'TECH_WRITING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+DELETE FROM Technology_PrereqTechs 
+WHERE TechType = 'TECH_WRITING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 DELETE FROM Technology_PrereqTechs 
 WHERE TechType = 'TECH_MATHEMATICS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
@@ -160,7 +160,6 @@ INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_HORSEBAC
 --	CALENDAR
 -------------------------------------------------------
 INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_CALENDAR', 'TECH_ANIMAL_HUSBANDRY');
-INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_CALENDAR', 'TECH_ARCHERY');
 
 -------------------------------------------------------
 --	MILITARY_THEORY
@@ -198,4 +197,8 @@ INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_CONSTRUC
 INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_MASONRY', 'TECH_MILITARY_THEORY');
 
 
-
+-------------------------------------------------------
+--	WRITING 
+-------------------------------------------------------
+INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_WRITING', 'TECH_HORSEBACK_RIDING');
+INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_WRITING', 'TECH_CALENDAR');
