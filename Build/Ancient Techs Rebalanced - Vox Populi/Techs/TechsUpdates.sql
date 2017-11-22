@@ -32,7 +32,7 @@ UPDATE Technologies Set GridY = 3 WHERE Type = 'TECH_ANIMAL_HUSBANDRY';
 UPDATE Technologies Set GridY = 4 WHERE Type = 'TECH_ARCHERY';
 UPDATE Technologies Set GridY = 5 WHERE Type = 'TECH_THE_WHEEL';
 UPDATE Technologies Set GridY = 7 WHERE Type = 'TECH_WOOD_WORKING';
-UPDATE Technologies Set GridY = 8 WHERE Type = 'TECH_MINING';
+UPDATE Technologies Set GridY = 9 WHERE Type = 'TECH_MINING';
 
 
 -----------------------------------------------------------------------
@@ -40,5 +40,6 @@ UPDATE Technologies Set GridY = 8 WHERE Type = 'TECH_MINING';
 -----------------------------------------------------------------------
 UPDATE Technologies Set GridY = 0 WHERE Type = 'TECH_SAILING';
 UPDATE Technologies Set GridY = 2 WHERE Type = 'TECH_HORSEBACK_RIDING';
+UPDATE Technologies Set GridY = 3 WHERE Type = 'TECH_CALENDAR';
 --	VP's construction.
-UPDATE Technologies Set GridY = 8 WHERE Type = 'TECH_MASONRY';
+UPDATE Technologies Set GridY = 7 WHERE Type = 'TECH_MASONRY';
