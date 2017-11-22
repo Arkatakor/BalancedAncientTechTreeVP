@@ -354,7 +354,7 @@
     </Content>
     <Content Include="Lua\CityNearbyMapDatas.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Resources\Resources.sql">
       <SubType>Lua</SubType>
