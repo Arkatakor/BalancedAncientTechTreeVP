@@ -25,8 +25,6 @@ VALUES ('AS2D_TECH_FISHING', 'SND_TECH_FISHING', 'GAME_SPEECH', 80, 80);
 UPDATE Language_en_US Set Text = 'Used to establish lucrative sea-based Trade Routes. Also allows you to build military and economic ships, useful for exploration' 
 WHERE Tag = 'TXT_KEY_TECH_SAILING_HELP';
 
-
-
 -----------------------------------------------------------------------
 --	HUNTING 
 -----------------------------------------------------------------------
@@ -148,7 +146,7 @@ WHERE Tag = 'TXT_KEY_TECH_ARCHERY_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHER
 --	VP: MILITARY THEORY
 -----------------------------------------------------------------------
 INSERT INTO Technologies (Type, Cost, Description, Civilopedia, Help, Era, Trade, GoodyTech, GridX, GridY, Quote, PortraitIndex, IconAtlas, AudioIntro, AudioIntroHeader) 
-VALUES ('TECH_MILITARY_THEORY', 80, 'TXT_KEY_TECH_MILITARY_THEORY_TITLE', 'TXT_KEY_TECH_MILITARY_THEORY_DESC', 'TXT_KEY_TECH_MILITARY_THEORY_HELP', 'ERA_ANCIENT', 1, 0, 2, 6, 
+VALUES ('TECH_MILITARY_THEORY', 80, 'TXT_KEY_TECH_MILITARY_THEORY_TITLE', 'TXT_KEY_TECH_MILITARY_THEORY_DESC', 'TXT_KEY_TECH_MILITARY_THEORY_HELP', 'ERA_ANCIENT', 1, 0, 2, 5, 
 'TXT_KEY_TECH_MILITARY_THEORY_QUOTE', 0, 'ANCIENT_TECH_ICON_ATLAS', 'AS2D_TECH_MILITARY_THEORY', 'AS2D_TECH_MILITARY_THEORY');
 
 INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_MILITARY_THEORY_TITLE', 'Military Theory');
@@ -169,9 +167,9 @@ WHERE Tag = 'TXT_KEY_TECH_MYSTICISM_HELP';
 -----------------------------------------------------------------------
 --	SAILING: (VP HORSEBACK RIDING)
 -----------------------------------------------------------------------
-UPDATE Technologies
-SET PrereqTech = 'TECH_FISHING' 
-WHERE Type = 'TECH_SAILING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+--UPDATE Technologies
+--SET PrereqTech = 'TECH_FISHING' 
+--WHERE Type = 'TECH_SAILING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 
 --Embarkation
@@ -189,14 +187,6 @@ WHERE Type = 'TECH_OPTICS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMU
 UPDATE Language_en_US
 SET Text = 'Optics'
 WHERE Tag = 'TXT_KEY_TECH_OPTICS_TITLE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-
------------------------------------------------------------------------
---	TRADE: (VP HORSEBACK RIDING)
------------------------------------------------------------------------
-
---	Insert new prereq techs for trade 
-INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_HORSEBACK_RIDING', 'TECH_POTTERY')
-INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_HORSEBACK_RIDING', 'TECH_MYSTICISM');
 
 -----------------------------------------------------------------------
 --	VP: TRAPPING (REMOVAL)

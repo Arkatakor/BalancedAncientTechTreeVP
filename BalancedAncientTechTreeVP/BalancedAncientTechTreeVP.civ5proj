@@ -218,91 +218,91 @@
   <ItemGroup>
     <Content Include="Art\Buildings\AncientBuildingAtlas128.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Buildings\AncientBuildingAtlas256.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Buildings\AncientBuildingAtlas45.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Buildings\AncientBuildingAtlas64.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Buildings\AncientBuildingAtlas80.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Buildings\LascauxSplash.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Techs\AncientTechAtlas128.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Techs\AncientTechAtlas214.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Techs\AncientTechAtlas256.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Techs\AncientTechAtlas45.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Techs\AncientTechAtlas64.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Techs\AncientTechAtlas80.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Units\AncientUnitAtlas128.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Units\AncientUnitAtlas256.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Units\AncientUnitAtlas45.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Units\AncientUnitAtlas64.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Units\AncientUnitAtlas80.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Art\Units\LightAxemanFlag.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Assets\Sound\TechFishing.mp3">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Assets\Sound\TechHunting.mp3">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Assets\Sound\TechMysticism.mp3">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Assets\Sound\TechStoneTools.mp3">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Buildings\Art.sql">
       <SubType>Lua</SubType>
