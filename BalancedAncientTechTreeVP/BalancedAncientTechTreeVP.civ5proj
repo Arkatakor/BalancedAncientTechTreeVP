@@ -129,12 +129,12 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Buildings/Updates.sql</FileName>
+        <FileName>Buildings/Wonders.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Buildings/Wonders.xml</FileName>
+        <FileName>Buildings/Updates.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -179,12 +179,12 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Units/Updates.sql</FileName>
+        <FileName>Units/UnitsText.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Units/UnitsText.xml</FileName>
+        <FileName>Units/Updates.sql</FileName>
       </Action>
     </ModActions>
     <ModContent>
