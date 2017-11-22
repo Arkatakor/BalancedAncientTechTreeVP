@@ -58,16 +58,17 @@
     <File md5="A07404B7B19AD4C162DE3AC429C9CB79" import="0">Buildings/Updates.sql</File>
     <File md5="C4D013E994AD733A92EA69239F0A9B8B" import="0">Buildings/Wonders.xml</File>
     <File md5="B9C09897EF27C1A602363017071DFB57" import="0">Lua/Building_RequireNearbyResourcesORS.lua</File>
-    <File md5="83C68E903BB413946D0AD87F4182F467" import="0">Lua/CityNearbyMapDatas.lua</File>
+    <File md5="83C68E903BB413946D0AD87F4182F467" import="1">Lua/CityNearbyMapDatas.lua</File>
     <File md5="F1BF847401D7DB5D7C9B906D047E68E2" import="0">Resources/Resources.sql</File>
     <File md5="73F5EB7DD5C7F0C06E7371B52278538C" import="0">Techs/AIFreeTechs.xml</File>
     <File md5="A62BF9A34650D6CDA61A54D835A6E5E7" import="0">Techs/Art.sql</File>
-    <File md5="A9AAF336A920948F3DD2C455AA5D6993" import="0">Techs/TechCoordinates.sql</File>
-    <File md5="E428FD8BF81C876A071143CEBEE99001" import="0">Techs/Techs.sql</File>
+    <File md5="3855FDAAA92015CCC2E9F6D30593B001" import="0">Techs/TechCoordinates.sql</File>
+    <File md5="F78A8D72498B32FADE5B7C145CAB7EE8" import="0">Techs/Techs.sql</File>
     <File md5="D0E0155576390A303EAB5A4C66DC8342" import="0">Techs/TechsFlavors.sql</File>
     <File md5="43CC5F29DCAADD4784B7F2EDF59A0AA4" import="0">Techs/TechsHandicapInfo.sql</File>
     <File md5="9F3D7FE50CD41DB3AC3EC9BC275BB0B4" import="0">Techs/TechsPrereq.sql</File>
     <File md5="C1D7E421BC978BC080019C5D7B3529BB" import="0">Techs/TechsResources.sql</File>
+    <File md5="D3DF8B29D1FACF3DCC8FBFEBB746B4DE" import="0">Techs/TechsUpdates.sql</File>
     <File md5="095A6CD6A4DEE305E71221383A53E38F" import="0">Units/Art.sql</File>
     <File md5="B154AAFDF375E3D4E270F79EED3D2E35" import="0">Units/UnitFlagAtlas.xml</File>
     <File md5="A75B6982596AA6D6DB227E78BF657DFB" import="0">Units/Units.xml</File>
@@ -89,6 +90,7 @@
       <UpdateDatabase>Techs/TechsResources.sql</UpdateDatabase>
       <UpdateDatabase>Techs/AIFreeTechs.xml</UpdateDatabase>
       <UpdateDatabase>Techs/Art.sql</UpdateDatabase>
+      <UpdateDatabase>Techs/TechsUpdates.sql</UpdateDatabase>
       <UpdateDatabase>Resources/Resources.sql</UpdateDatabase>
       <UpdateDatabase>Buildings/Art.sql</UpdateDatabase>
       <UpdateDatabase>Buildings/Buildings.xml</UpdateDatabase>

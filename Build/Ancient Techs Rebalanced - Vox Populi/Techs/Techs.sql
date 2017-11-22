@@ -188,16 +188,3 @@ UPDATE Language_en_US
 SET Text = 'Optics'
 WHERE Tag = 'TXT_KEY_TECH_OPTICS_TITLE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
------------------------------------------------------------------------
---	VP: TRAPPING (REMOVAL)
------------------------------------------------------------------------
-DELETE FROM Technologies WHERE Type = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-DELETE FROM Technology_PrereqTechs WHERE PrereqTech = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-DELETE FROM Technology_PrereqTechs WHERE PrereqTech = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-DELETE FROM Technology_PrereqTechs WHERE TechType = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-DELETE FROM Technology_Flavors TechType = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-
------------------------------------------------------------------------
---	VP: REMOVE FREE TECHS FROM AI
------------------------------------------------------------------------
-DELETE FROM HandicapInfo_AIFreeTechs;
