@@ -161,19 +161,13 @@ INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_WRITING'
 -------------------------------------------------------
 --	CONSTRUCTION (VP: MASONRY)
 -------------------------------------------------------
-INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_MASONRY', 'TECH_THE_WHEEL');
-INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_MASONRY', 'TECH_WOOD_WORKING');
+INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_MASONRY', 'TECH_CONSTRUCTION');
 
 --===================================================================--
 -----------------------------------------------------------------------
 -- 					COORDINATES
 -----------------------------------------------------------------------
 --===================================================================--
-
------------------------------------------------------------------------
---	VP: REMOVE FREE TECHS FROM AI
------------------------------------------------------------------------
-
 
 -----------------------------------------------------------------------
 --	TIER 1 TECHS
@@ -183,13 +177,13 @@ UPDATE Technologies Set GridY = 3 WHERE Type = 'TECH_HUNTING' AND EXISTS (SELECT
 -----------------------------------------------------------------------
 --	TIER 2 TECHS
 -----------------------------------------------------------------------
-UPDATE Technologies Set GridX = 1 WHERE Type = 'TECH_ARCHERY';
-UPDATE Technologies Set GridY = 1 WHERE Type = 'TECH_POTTERY';
-UPDATE Technologies Set GridY = 3 WHERE Type = 'TECH_ANIMAL_HUSBANDRY';
-UPDATE Technologies Set GridY = 4 WHERE Type = 'TECH_ARCHERY';
-UPDATE Technologies Set GridY = 5 WHERE Type = 'TECH_THE_WHEEL';
-UPDATE Technologies Set GridY = 7 WHERE Type = 'TECH_WOOD_WORKING';
-UPDATE Technologies Set GridY = 9 WHERE Type = 'TECH_MINING';
+UPDATE Technologies Set GridX = 1, Cost = 55 WHERE Type = 'TECH_ARCHERY';
+UPDATE Technologies Set GridY = 1, Cost = 55 WHERE Type = 'TECH_POTTERY';
+UPDATE Technologies Set GridY = 3, Cost = 55 WHERE Type = 'TECH_ANIMAL_HUSBANDRY';
+UPDATE Technologies Set GridY = 4, Cost = 55 WHERE Type = 'TECH_ARCHERY';
+UPDATE Technologies Set GridY = 5, Cost = 55 WHERE Type = 'TECH_THE_WHEEL';
+UPDATE Technologies Set GridY = 7, Cost = 55 WHERE Type = 'TECH_WOOD_WORKING';
+UPDATE Technologies Set GridY = 9, Cost = 55 WHERE Type = 'TECH_MINING';
 
 
 -----------------------------------------------------------------------
@@ -200,3 +194,5 @@ UPDATE Technologies Set GridY = 2 WHERE Type = 'TECH_HORSEBACK_RIDING';
 UPDATE Technologies Set GridY = 3 WHERE Type = 'TECH_CALENDAR';
 --	VP's construction.
 UPDATE Technologies Set GridY = 7 WHERE Type = 'TECH_MASONRY';
+
+

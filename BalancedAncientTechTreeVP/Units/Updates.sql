@@ -27,8 +27,8 @@ UPDATE Units SET GoodyHutUpgradeUnitClass = 'UNITCLASS_ARCHER' WHERE Class = 'UN
 -----------------------------------------------------------------------
 --	VP: SAILING: 
 -----------------------------------------------------------------------
---Galley
-UPDATE Units SET PrereqTech = 'TECH_SAILING' WHERE Class = 'UNITCLASS_GALLEY' 
+--Trireme
+UPDATE Units SET PrereqTech = 'TECH_SAILING' WHERE Class = 'UNITCLASS_TRIREME' 
 AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 --Embarkation
