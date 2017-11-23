@@ -50,4 +50,3 @@ INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_WOOD_WOR
 --DELETE FROM Technology_PrereqTechs 
 --WHERE TechType = 'TECH_IRON_WORKING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 						
---===================================================================--
