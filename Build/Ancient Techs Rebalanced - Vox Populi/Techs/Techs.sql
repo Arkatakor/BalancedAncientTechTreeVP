@@ -164,14 +164,6 @@ INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_MILITARY_THEORY_DES
 UPDATE Language_en_US SET Text = 'Allows you to build the elder council and shrine.  Also leads to writing.' 
 WHERE Tag = 'TXT_KEY_TECH_MYSTICISM_HELP';
 
------------------------------------------------------------------------
---	SAILING: (VP HORSEBACK RIDING)
------------------------------------------------------------------------
---UPDATE Technologies
---SET PrereqTech = 'TECH_FISHING' 
---WHERE Type = 'TECH_SAILING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-
-
 --Embarkation
 UPDATE UnitPromotions SET TechPrereq = 'TECH_SAILING' WHERE Type = 'PROMOTION_EMBARKATION' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 UPDATE UnitPromotions SET TechPrereq = 'TECH_SAILING' WHERE Type = 'PROMOTION_DEFENSIVE_EMBARKATION' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
