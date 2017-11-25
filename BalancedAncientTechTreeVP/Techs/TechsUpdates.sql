@@ -88,6 +88,7 @@ INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_ANIMAL_H
 --	ARCHERY
 -------------------------------------------------------
 INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_ARCHERY', 'TECH_HUNTING');
+INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_ARCHERY', 'TECH_STONE_TOOLS');
 
 -------------------------------------------------------
 --	THE WHEEL

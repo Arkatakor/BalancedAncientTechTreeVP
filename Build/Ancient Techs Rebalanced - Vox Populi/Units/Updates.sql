@@ -25,10 +25,10 @@ UPDATE Units SET ObsoleteTech = 'TECH_ARCHERY' WHERE Class = 'UNITCLASS_LIGHT_AX
 UPDATE Units SET GoodyHutUpgradeUnitClass = 'UNITCLASS_ARCHER' WHERE Class = 'UNITCLASS_LIGHT_AXEMAN';
 
 -----------------------------------------------------------------------
---	VP:AGRICULTURE
+--	VP: AGRICULTURE: 
 -----------------------------------------------------------------------
-UPDATE Units SET PrereqTech = 'TECH_AGRICULTURE' WHERE Class = 'UNITCLASS_SETTLER' 
-AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='SETTLER_COMMUNITY' AND Value= 1 );
+UPDATE Units SET PrereqTech = 'TECH_AGRICULTURE' WHERE Type = 'UNIT_SETTLER' 
+AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 -----------------------------------------------------------------------
 --	VP: SAILING: 

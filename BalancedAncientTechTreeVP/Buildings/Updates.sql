@@ -34,9 +34,9 @@ UPDATE Buildings
 SET PrereqTech = 'TECH_MYSTICISM' 
 WHERE BuildingClass = 'BUILDINGCLASS_GROVE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
-UPDATE Buildings
-SET PrereqTech = 'TECH_MYSTICISM'
-WHERE Type = 'BUILDING_STONEHENGE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
+--UPDATE Buildings
+--SET PrereqTech = 'TECH_MYSTICISM'
+--WHERE Type = 'BUILDING_STONEHENGE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 -----------------------------------------------------------------------
 --	VP: OPTICS: (VP OPTICS)
 -----------------------------------------------------------------------
