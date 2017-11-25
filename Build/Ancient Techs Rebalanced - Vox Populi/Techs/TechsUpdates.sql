@@ -88,6 +88,7 @@ INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_ANIMAL_H
 --	ARCHERY
 -------------------------------------------------------
 INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_ARCHERY', 'TECH_HUNTING');
+INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_ARCHERY', 'TECH_STONE_TOOLS');
 
 -------------------------------------------------------
 --	THE WHEEL
@@ -122,6 +123,7 @@ INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_HORSEBAC
 --	CALENDAR
 -------------------------------------------------------
 INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_CALENDAR', 'TECH_ANIMAL_HUSBANDRY');
+INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_CALENDAR', 'TECH_ARCHERY');
 
 -------------------------------------------------------
 --	MILITARY_THEORY
@@ -162,6 +164,7 @@ INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_WRITING'
 --	CONSTRUCTION (VP: MASONRY)
 -------------------------------------------------------
 INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_CONSTRUCTION', 'TECH_MASONRY');
+INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_CONSTRUCTION', 'TECH_BRONZE_WORKING');
 
 --===================================================================--
 -----------------------------------------------------------------------

@@ -55,20 +55,20 @@
     <File md5="54D2EAD7F59E4C46D2A84035E3879379" import="0">Buildings/BuildingsText.xml</File>
     <File md5="315F5D2A16773FEF9647BA76317A3F05" import="0">Buildings/BuildingsYieldChanges.xml</File>
     <File md5="3266D345E53C7FFC98B1AF9DCC539F75" import="0">Buildings/ResourceYieldChanges.xml</File>
-    <File md5="C6772415532312A78BC7029840FB11E2" import="0">Buildings/Updates.sql</File>
+    <File md5="58172EA9ADC23D51E7EDBDEE5930A17E" import="0">Buildings/Updates.sql</File>
     <File md5="C4D013E994AD733A92EA69239F0A9B8B" import="0">Buildings/Wonders.xml</File>
     <File md5="B9C09897EF27C1A602363017071DFB57" import="0">Lua/Building_RequireNearbyResourcesORS.lua</File>
     <File md5="83C68E903BB413946D0AD87F4182F467" import="1">Lua/CityNearbyMapDatas.lua</File>
-    <File md5="CCE5C1D44BCBD95F1F37C842245EF8FA" import="0">Resources/Resources.sql</File>
+    <File md5="0AF9EF2332045AC45E33BEB9814D303E" import="0">Resources/Resources.sql</File>
     <File md5="73F5EB7DD5C7F0C06E7371B52278538C" import="0">Techs/AIFreeTechs.xml</File>
     <File md5="A62BF9A34650D6CDA61A54D835A6E5E7" import="0">Techs/Art.sql</File>
     <File md5="43846A80E58FABB50BD4AD27A6DCE149" import="0">Techs/TechCoordinates.sql</File>
     <File md5="F78A8D72498B32FADE5B7C145CAB7EE8" import="0">Techs/Techs.sql</File>
-    <File md5="9B9324A981E0D0D67177638B1B1A276E" import="0">Techs/TechsFlavors.sql</File>
+    <File md5="221DB15C1188CF0B55F58FA5E4510F2A" import="0">Techs/TechsFlavors.sql</File>
     <File md5="43CC5F29DCAADD4784B7F2EDF59A0AA4" import="0">Techs/TechsHandicapInfo.sql</File>
     <File md5="1C03FCBBC4A84042F0AD04B125A44C77" import="0">Techs/TechsPrereq.sql</File>
     <File md5="C1D7E421BC978BC080019C5D7B3529BB" import="0">Techs/TechsResources.sql</File>
-    <File md5="BFC53A762DED185D426A68B9835F7694" import="0">Techs/TechsUpdates.sql</File>
+    <File md5="D63D69DD82B94F048182CA4A01672697" import="0">Techs/TechsUpdates.sql</File>
     <File md5="095A6CD6A4DEE305E71221383A53E38F" import="0">Units/Art.sql</File>
     <File md5="B154AAFDF375E3D4E270F79EED3D2E35" import="0">Units/UnitFlagAtlas.xml</File>
     <File md5="A75B6982596AA6D6DB227E78BF657DFB" import="0">Units/Units.xml</File>
@@ -78,7 +78,7 @@
     <File md5="0DDB4CCEF01943E04007E446789C3B4F" import="0">Units/UnitsFlavors.xml</File>
     <File md5="F1869F80694F21B32AFD3DA06325AAE6" import="0">Units/UnitsFreePromotions.xml</File>
     <File md5="43F6D1C8B1B324C5600910D5DEBD58BA" import="0">Units/UnitsText.xml</File>
-    <File md5="695A26D8DBD9E9D8549435D0BF1E4B64" import="0">Units/Updates.sql</File>
+    <File md5="1FB0BD7A8755445C710961BDFA8DDDFB" import="0">Units/Updates.sql</File>
   </Files>
   <Actions>
     <OnModActivated>

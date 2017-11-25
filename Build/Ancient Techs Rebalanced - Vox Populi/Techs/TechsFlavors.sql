@@ -52,8 +52,9 @@ UPDATE Builds SET PrereqTech = 'TECH_HUNTING' WHERE Type = 'BUILD_CAMP';
 -- 					VP UPDATES
 -----------------------------------------------------------------------
 --===================================================================--
-
-UPDATE Builds SET PrereqTech = 'TECH_HORSEBACK_RIDING' WHERE Type = 'BUILD_TRADING_POST';
+UPDATE Builds
+SET PrereqTech = 'TECH_POTTERY'
+WHERE Type = 'BUILD_TRADING_POST' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_TERRAIN' AND Value= 1 );
 
 UPDATE Builds
 SET PrereqTech = 'TECH_MINING'
