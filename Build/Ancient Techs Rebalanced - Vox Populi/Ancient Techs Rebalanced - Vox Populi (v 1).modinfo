@@ -64,7 +64,7 @@
     <File md5="A62BF9A34650D6CDA61A54D835A6E5E7" import="0">Techs/Art.sql</File>
     <File md5="43846A80E58FABB50BD4AD27A6DCE149" import="0">Techs/TechCoordinates.sql</File>
     <File md5="F78A8D72498B32FADE5B7C145CAB7EE8" import="0">Techs/Techs.sql</File>
-    <File md5="221DB15C1188CF0B55F58FA5E4510F2A" import="0">Techs/TechsFlavors.sql</File>
+    <File md5="A3C22AA0224E9747977F731F4445BCAD" import="0">Techs/TechsFlavors.sql</File>
     <File md5="43CC5F29DCAADD4784B7F2EDF59A0AA4" import="0">Techs/TechsHandicapInfo.sql</File>
     <File md5="1C03FCBBC4A84042F0AD04B125A44C77" import="0">Techs/TechsPrereq.sql</File>
     <File md5="C1D7E421BC978BC080019C5D7B3529BB" import="0">Techs/TechsResources.sql</File>
