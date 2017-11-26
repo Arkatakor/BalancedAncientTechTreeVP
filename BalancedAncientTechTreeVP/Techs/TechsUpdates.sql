@@ -3,16 +3,6 @@
 -- 					TECH DELETION
 -----------------------------------------------------------------------
 --===================================================================--
------------------------------------------------------------------------
---	VP: TRAPPING (REMOVAL)
------------------------------------------------------------------------
-DELETE FROM Technologies WHERE Type = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-DELETE FROM Technology_PrereqTechs WHERE PrereqTech = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-DELETE FROM Technology_PrereqTechs WHERE PrereqTech = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-DELETE FROM Technology_PrereqTechs WHERE TechType = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-DELETE FROM Technology_Flavors WHERE TechType = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-
-DELETE FROM HandicapInfo_AIFreeTechs;
 -------------------------------------------------------
 --	REMOVE TIER 2 PREREQ
 -------------------------------------------------------
@@ -199,7 +189,8 @@ UPDATE Technologies Set GridY = 3 WHERE Type = 'TECH_CALENDAR';
 UPDATE Technologies Set GridY = 7 WHERE Type = 'TECH_MASONRY';
 
 
-UPDATE Technologies SET Cost =      35 WHERE GridX =  0; --35
-UPDATE Technologies SET Cost =     	60 WHERE GridX =  1; --55
-UPDATE Technologies SET Cost =     100 WHERE GridX =  2; --105
+UPDATE Technologies SET Cost =      30 WHERE GridX =  0; --35
+UPDATE Technologies SET Cost =     	55 WHERE GridX =  1; --55
+UPDATE Technologies SET Cost =		90 WHERE GridX =  2; --105
+
 
