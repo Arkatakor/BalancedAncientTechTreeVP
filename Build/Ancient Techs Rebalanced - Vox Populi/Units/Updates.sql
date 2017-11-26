@@ -61,21 +61,6 @@ UPDATE Units SET PrereqTech = 'TECH_MILITARY_THEORY' WHERE Type = 'UNIT_CARTHAGI
 UPDATE Units SET PrereqTech = 'TECH_MILITARY_THEORY' WHERE Type = 'UNIT_ASSYRIAN_SIEGE_TOWER' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 -----------------------------------------------------------------------
---	BUILDS
------------------------------------------------------------------------
-UPDATE Builds
-SET PrereqTech = 'TECH_POTTERY'
-WHERE Type = 'BUILD_TRADING_POST' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_TERRAIN' AND Value= 1 );
-
-UPDATE Builds
-SET PrereqTech = 'TECH_MINING'
-WHERE Type = 'BUILD_REMOVE_FOREST' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_TERRAIN' AND Value= 1 );
-
-UPDATE Builds
-SET PrereqTech = 'TECH_BRONZE_WORKING'
-WHERE Type = 'BUILD_REMOVE_JUNGLE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_TERRAIN' AND Value= 1 );
-
------------------------------------------------------------------------
 --	VP: TRAPPING (REMOVAL)
 -----------------------------------------------------------------------
 DELETE FROM Technologies WHERE Type = 'TECH_TRAPPING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );

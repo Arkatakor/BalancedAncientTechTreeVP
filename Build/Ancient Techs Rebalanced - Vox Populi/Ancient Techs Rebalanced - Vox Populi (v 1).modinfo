@@ -54,8 +54,8 @@
     <File md5="D6BE9345EC303460FF73FF6659B73F7D" import="0">Buildings/BuildingsResourcesUnimproved.xml</File>
     <File md5="54D2EAD7F59E4C46D2A84035E3879379" import="0">Buildings/BuildingsText.xml</File>
     <File md5="315F5D2A16773FEF9647BA76317A3F05" import="0">Buildings/BuildingsYieldChanges.xml</File>
-    <File md5="3266D345E53C7FFC98B1AF9DCC539F75" import="0">Buildings/ResourceYieldChanges.xml</File>
-    <File md5="2C0D06F937B9A8C73880FA73BA6B1529" import="0">Buildings/Updates.sql</File>
+    <File md5="8892E6095DFF3F29C22332640BF85A37" import="0">Buildings/ResourceYieldChanges.xml</File>
+    <File md5="E386A09655ADC757ED358EB712B9E310" import="0">Buildings/Updates.sql</File>
     <File md5="C4D013E994AD733A92EA69239F0A9B8B" import="0">Buildings/Wonders.xml</File>
     <File md5="B9C09897EF27C1A602363017071DFB57" import="0">Lua/Building_RequireNearbyResourcesORS.lua</File>
     <File md5="83C68E903BB413946D0AD87F4182F467" import="1">Lua/CityNearbyMapDatas.lua</File>
@@ -78,7 +78,7 @@
     <File md5="0DDB4CCEF01943E04007E446789C3B4F" import="0">Units/UnitsFlavors.xml</File>
     <File md5="F1869F80694F21B32AFD3DA06325AAE6" import="0">Units/UnitsFreePromotions.xml</File>
     <File md5="43F6D1C8B1B324C5600910D5DEBD58BA" import="0">Units/UnitsText.xml</File>
-    <File md5="285B369747187F25CC8E79E5CB522C05" import="0">Units/Updates.sql</File>
+    <File md5="46DDEA41733F78AC5E704885EDEDB97B" import="0">Units/Updates.sql</File>
   </Files>
   <Actions>
     <OnModActivated>
