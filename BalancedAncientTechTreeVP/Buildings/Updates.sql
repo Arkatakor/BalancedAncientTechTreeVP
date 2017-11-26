@@ -48,7 +48,7 @@ WHERE Tag = 'TXT_KEY_TECH_OPTICS_TITLE' AND EXISTS (SELECT * FROM COMMUNITY WHER
 -----------------------------------------------------------------------
 --	VP: TRADE: (VP HORSEBACK RIDING)
 -----------------------------------------------------------------------
-UPDATE Buildings SET PrereqTech = 'TECH_HORSEBACK_RIDING' WHERE BuildingClass = 'BUILDINGCLASS_FURRIER';
+UPDATE Buildings SET PrereqTech = 'TECH_ANIMAL_HUSBANDRY' WHERE BuildingClass = 'BUILDINGCLASS_FURRIER';
 
 -----------------------------------------------------------------------
 --	VP: MILITARY THEORY: Adding building and units to newly created tech
