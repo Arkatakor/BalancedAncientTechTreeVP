@@ -9,8 +9,10 @@ UPDATE Units SET PrereqTech = 'TECH_HUNTING' WHERE Class = 'UNITCLASS_SCOUT';
 --===================================================================--
 
 -----------------------------------------------------------------------
---	VP: Updates
+--	HUNTING
 -----------------------------------------------------------------------
+UPDATE Units SET PrereqTech = 'TECH_HUNTING' WHERE Class = 'UNITCLASS_PATHFINDER'
+AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
 -----------------------------------------------------------------------
 --	VP: ARCHERY

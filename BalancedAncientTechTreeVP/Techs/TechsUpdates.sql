@@ -119,13 +119,13 @@ INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_CALENDAR
 --	MILITARY_THEORY
 -------------------------------------------------------
 INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_MILITARY_THEORY', 'TECH_ARCHERY');
-INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_MILITARY_THEORY', 'TECH_THE_WHEEL');
+INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_MILITARY_THEORY', 'TECH_ANIMAL_HUSBANDRY');
 
 -------------------------------------------------------
 --	BRONZE WORKING
 -------------------------------------------------------
 INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_BRONZE_WORKING', 'TECH_MINING');
-INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_BRONZE_WORKING', 'TECH_WOOD_WORKING');
+INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_BRONZE_WORKING', 'TECH_THE_WHEEL');
 
 --===================================================================--
 -----------------------------------------------------------------------
@@ -173,9 +173,9 @@ UPDATE Technologies Set GridY = 3 WHERE Type = 'TECH_HUNTING' AND EXISTS (SELECT
 UPDATE Technologies Set GridX = 1 WHERE Type = 'TECH_ARCHERY';
 UPDATE Technologies Set GridY = 1 WHERE Type = 'TECH_POTTERY';
 UPDATE Technologies Set GridY = 3 WHERE Type = 'TECH_ANIMAL_HUSBANDRY';
-UPDATE Technologies Set GridY = 4 WHERE Type = 'TECH_ARCHERY';
-UPDATE Technologies Set GridY = 5 WHERE Type = 'TECH_THE_WHEEL';
-UPDATE Technologies Set GridY = 7 WHERE Type = 'TECH_WOOD_WORKING';
+UPDATE Technologies Set GridY = 5 WHERE Type = 'TECH_ARCHERY';
+UPDATE Technologies Set GridY = 7 WHERE Type = 'TECH_THE_WHEEL';
+UPDATE Technologies Set GridY = 6 WHERE Type = 'TECH_WOOD_WORKING';
 UPDATE Technologies Set GridY = 9 WHERE Type = 'TECH_MINING';
 
 
