@@ -193,4 +193,43 @@ UPDATE Technologies SET Cost =      30 WHERE GridX =  0; --35
 UPDATE Technologies SET Cost =     	55 WHERE GridX =  1; --55
 UPDATE Technologies SET Cost =		90 WHERE GridX =  2; --105
 
+--===================================================================--
+-----------------------------------------------------------------------
+-- 					TEXT AND ICONS
+-----------------------------------------------------------------------
+--===================================================================--
+-----------------------------------------------------------------------
+-- 					SAILING
+-----------------------------------------------------------------------
+UPDATE Language_en_US
+SET Text = 'Sailing'
+WHERE Tag = 'TXT_KEY_TECH_SAILING_TITLE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+UPDATE Language_en_US
+SET Text = 'Sailing is the art of harnessing the power of the wind to move a boat over the water. To be successful, sailing required the mastery of a number of diverse skills. First, the culture must be able to construct a seaworthy craft. Second, they must be able to construct some sort of sturdy sheets (sails) which can catch the wind and transmit its energy to the hull. Third they must be able to build the various ropes and cleats and pulleys used to control the sails of the ship, and finally they must be able to successfully navigate the vessel from point to point without getting lost or capsizing or suffering some other misfortune.[NEWLINE][NEWLINE]The earliest recorded evidence of watercraft can be found in illustrations in Egypt which date from around 4,000 BC. As a riparian (river-based) civilization, the Egyptians were excellent sailors. Many of their vessels contained both oars and sails, the former being used when the winds were not strong enough or weren not coming from a favorable direction.[NEWLINE][NEWLINE]By 3000 BC the Egyptians were venturing out into the Mediterranean Sea in their vessels, steering the lengthy journey across the open water to Crete and later Phoenicia. The Egyptians also sailed down the coast of Africa, looking for knowledge, trade and treasure.[NEWLINE][NEWLINE]The earliest warships - biremes and triremes and the like - were powered by oar and sail and possessed rams or beaks on their prows. During battle the helmsman would attempt to ram the enemy vessel at high speed, while avoiding enemy attempts to do the same thing. Some vessels were equipped with archers to fire at enemy craft from longer distance, while others had soldiers aboard; these vessels sought to come alongside the enemy craft so that their soldiers could board the other ship and take it by storm.[NEWLINE][NEWLINE]The Greeks - especially the Athenians and the island colonies - were masters at naval warfare. One of the reasons that they were able to defeat their much larger and more powerful neighbor, Persia, was that the Athenian navy dominated the Aegean Sea and thus constantly threatened the increasingly lengthy supply chain of Persia.'
+WHERE Tag = 'TXT_KEY_TECH_SAILING_DESC' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+UPDATE Language_en_US
+SET Text = 'Allows land units to [COLOR_POSITIVE_TEXT]Embark[ENDCOLOR] onto water tiles and travel along the coast. Also allows you to build ships, useful for exploration early naval warfare.'
+WHERE Tag = 'TXT_KEY_TECH_SAILING_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+UPDATE Technologies SET PortraitIndex = 13,  IconAtlas = 'TECH_ATLAS_1'
+WHERE Type = 'TECH_OPTICS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+-----------------------------------------------------------------------
+-- 					OPTICS
+-----------------------------------------------------------------------
+UPDATE Language_en_US
+SET Text = 'Optics is the study of light and vision. The earliest and most important optical challenges were centered upon aiding the perception of the human eye - letting it see greater distances, or allowing it to look at very small objects, or in darkness. The first lenses were developed by the ancient Egyptians and the Mesopotamians. The oldest lenses, made from polished crystal, date back to 700 BC. The Greeks and Romans created crude lenses by filling glass spheres with water. In "Optics," Euclid described the mathematical rules of perception and examined refraction. In the eighth century AD Islamic scholars studied optics in depth, writing learned treatises on refraction and the construction of lenses and mirrors.[NEWLINE][NEWLINE]The first wearable eyeglasses were invented in Italy in the 12th century, and the first primitive telescopes in the 15th, as was the first microscope. Though not very good by todays standards, these instruments greatly expanded mans ability to perceive the world around him and to navigate the worlds uncharted oceans.'
+WHERE Tag = 'TXT_KEY_TECH_OPTICS_DESC' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+UPDATE Language_en_US
+SET Text = 'Allows you to build the [COLOR_POSITIVE_TEXT]Lighthouse[ENDCOLOR] in coastal cities, improving [ICON_FOOD] Food output from water tiles, speeding their growth. Also grants you access to the [COLOR_POSITIVE_TEXT]Cargo Ship[ENDCOLOR].'
+WHERE Tag = 'TXT_KEY_TECH_OPTICS_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+UPDATE Language_en_US
+SET Text = 'Optics'
+WHERE Tag = 'TXT_KEY_TECH_OPTICS_TITLE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
+
+UPDATE Technologies SET PortraitIndex = 18,  IconAtlas = 'TECH_ATLAS_1'
+WHERE Type = 'TECH_OPTICS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
