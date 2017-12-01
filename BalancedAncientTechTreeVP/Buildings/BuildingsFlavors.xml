@@ -86,7 +86,19 @@
 			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 			<Flavor>4</Flavor>
 		</Row>
-		
+
+		<!--Apiary -->
+		<Row>
+			<BuildingType>BUILDING_APIARY</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_APIARY</BuildingType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>2</Flavor>
+		</Row>
+
 		<!--Palisade-->
 		<Row>
 			<BuildingType>BUILDING_PALISADE</BuildingType>

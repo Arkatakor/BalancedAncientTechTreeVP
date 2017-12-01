@@ -26,7 +26,7 @@
 			<ResourceType>RESOURCE_SHEEP</ResourceType>
 			<YieldType>YIELD_GOLD</YieldType>
 			<Yield>1</Yield>
-		</Row>
+		</Row>		
 		<!--Lascaux Caves-->
 		<Row>
 			<BuildingType>BUILDING_LASCAUX_CAVES</BuildingType>

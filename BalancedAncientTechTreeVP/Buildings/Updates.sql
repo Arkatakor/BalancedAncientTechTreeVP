@@ -51,6 +51,12 @@ WHERE Tag = 'TXT_KEY_TECH_OPTICS_TITLE' AND EXISTS (SELECT * FROM COMMUNITY WHER
 UPDATE Buildings SET PrereqTech = 'TECH_ANIMAL_HUSBANDRY' WHERE BuildingClass = 'BUILDINGCLASS_FURRIER';
 
 -----------------------------------------------------------------------
+--	ANIMAL HUSBANDRY
+-----------------------------------------------------------------------
+UPDATE Buildings 
+SET PrereqTech = 'TECH_ANIMAL_HUSBANDRY' WHERE BuildingClass = 'BUILDINGCLASS_APIARY';
+
+-----------------------------------------------------------------------
 --	VP: MILITARY THEORY: Adding building and units to newly created tech
 -----------------------------------------------------------------------
 UPDATE Buildings
