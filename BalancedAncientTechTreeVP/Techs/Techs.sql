@@ -25,6 +25,8 @@ VALUES ('AS2D_TECH_FISHING', 'SND_TECH_FISHING', 'GAME_SPEECH', 80, 80);
 UPDATE Language_en_US Set Text = 'Used to establish lucrative sea-based Trade Routes. Also allows you to build military and economic ships, useful for exploration' 
 WHERE Tag = 'TXT_KEY_TECH_SAILING_HELP';
 
+
+
 -----------------------------------------------------------------------
 --	HUNTING 
 -----------------------------------------------------------------------

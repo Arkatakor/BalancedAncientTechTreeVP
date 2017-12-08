@@ -1,15 +1,4 @@
 -------------------------------------------------------
---	FISHING
--------------------------------------------------------
-UPDATE Builds SET PrereqTech = 'TECH_FISHING' WHERE Type = 'BUILD_FISHING_BOATS';
-
--------------------------------------------------------
---	HUNTING
--------------------------------------------------------
---	hunting
-UPDATE Builds SET PrereqTech = 'TECH_HUNTING' WHERE Type = 'BUILD_CAMP';
-
--------------------------------------------------------
 --	SAILING
 -------------------------------------------------------
 --	Update sailing tech prerequisite to fishing instead of pottery
@@ -45,8 +34,3 @@ INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_THE_WHEE
 --	WOOD WORKING
 -------------------------------------------------------
 INSERT INTO Technology_PrereqTechs (TechType, PrereqTech) VALUES ('TECH_WOOD_WORKING', 'TECH_STONE_TOOLS');
-
---	masonry is construction in vp
---DELETE FROM Technology_PrereqTechs 
---WHERE TechType = 'TECH_IRON_WORKING' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
-						

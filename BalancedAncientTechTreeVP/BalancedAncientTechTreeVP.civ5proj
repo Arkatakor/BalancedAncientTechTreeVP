@@ -186,6 +186,11 @@
         <Type>UpdateDatabase</Type>
         <FileName>Units/Updates.sql</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Improvements/Improvements.sql</FileName>
+      </Action>
     </ModActions>
     <ModContent>
       <Content xmlns="">
@@ -219,6 +224,7 @@
     <Folder Include="Units" />
     <Folder Include="Techs" />
     <Folder Include="Resources" />
+	<Folder Include="Improvements" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Art\Buildings\AncientBuildingAtlas128.dds">
@@ -350,6 +356,10 @@
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Buildings\Wonders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Improvements\Improvements.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
