@@ -6,12 +6,45 @@
     <Name>Ancient Techs Rebalanced - Vox Populi</Name>
     <Guid>168e2f76-6cce-41b5-85c0-f5bdb3cb3a28</Guid>
     <ModVersion>1</ModVersion>
-    <Stability>Alpha</Stability>
+    <Stability>Beta</Stability>
     <Teaser>Description</Teaser>
-    <Description>Description</Description>
+    <Description>Adds a new level of depth the to the ancient era with hunting, fishing, mysticism, stone tools and wood working.  Monument and shrine require these new techs.  New buildings include furrier, carpenter, fish traps, apiary and the Lascaux Caves and Knossos wonders.
+
+[h1][b]Compatibility[/b][/h1]
+
+Compatible with any tech mod that does modify ancient era techs. Works with the Enlightenment Era and Future Worlds mods for example (I use them myself in conjunction with this mod).  Not compatible with 'Trading Post Turn into Towns".
+
+[h1][b]Background &amp; Reasons for creating this Mod[/b][/h1]
+
+The ideas behind the techs implemented in this mod stem from Civ4 (hunting / fishing / mysticism) and from [url=http://anewdawn.sourceforge.net/pages/features/]Civ4 BtS Rise of Mankind - A New Dawn mod[/url].  The latter was also the source of ideas behind some of the new buildings found in this mod.
+
+[h1]Reason 1: Balancing early resource access[/h1]
+
+Though resources are guaranteed around a capital, early access to them is not, particularly regarding sea resources as well as land resources like bison, deer, ivory and furs. This is because sailing and trapping are expensive to research very early game. This creates an imbalance as capitals that have wheat / cattle / sheep get an unfair advantage early game vs capitals that spawn next to sea resources or land resources like deer / bison. This mod aims to re-balance that and leans on Civ4's initial tech tree design to achieve this.   
+
+[h1]Reason 2: Historical Accuracy[/h1]
+
+Historically there is no realistic reason why acquiring fish, bison or deer should be so much harder than irrigating land or herding sheep or cattle. After all people were hunter-gatherers long before they developed proper agriculture.
+
+[h1]Reason 3: Adding more depth to the ancient era[/h1]
+
+The monument was available right off the bat and having the shrine building available with pottery seemed nonsensical.  Also there just seemed to be too few techs before one would wonder rush the great library / stonehenge.  This mod opens up new tech research priority strategies.
+
+[h1][b]AI Free Techs Difficulty Adjustments [/b][/h1]
+
+All free techs for AI are removed in this modmod.
+
+[h1][b]SPECIAL THANKS[/b][/h1]
+
+This mod would not have been possible without the following contributors: 
+
+- Troller0001 
+- whoward69
+- LeeS
+
+Also special thanks to LeeS whose resource-in-vicinity lua code came in great use.</Description>
     <Authors>Arkatakor</Authors>
-    <SpecialThanks>
-    </SpecialThanks>
+    <SpecialThanks>Troller0001, whoward69, LeeS</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
@@ -224,7 +257,7 @@
     <Folder Include="Units" />
     <Folder Include="Techs" />
     <Folder Include="Resources" />
-	<Folder Include="Improvements" />
+    <Folder Include="Improvements" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Art\Buildings\AncientBuildingAtlas128.dds">
