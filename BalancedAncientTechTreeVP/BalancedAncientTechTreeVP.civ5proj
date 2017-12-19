@@ -226,11 +226,17 @@ Also special thanks to LeeS whose resource-in-vicinity lua code came in great us
       </Action>
     </ModActions>
     <ModContent>
-      <Content xmlns="">
+      <Content>
         <Type>InGameUIAddin</Type>
         <Name>Building_RequireNearbyResourcesORS</Name>
         <Description>Building_RequireNearbyResourcesORS</Description>
         <FileName>Lua/Building_RequireNearbyResourcesORS.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>KnossosDebuff</Name>
+        <Description>KnossosDebuff</Description>
+        <FileName>Lua/KnossosDebuff.lua</FileName>
       </Content>
     </ModContent>
   </PropertyGroup>
@@ -407,6 +413,10 @@ Also special thanks to LeeS whose resource-in-vicinity lua code came in great us
     <Content Include="Lua\CityNearbyMapDatas.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\KnossosDebuff.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Resources\Resources.sql">
       <SubType>Lua</SubType>
