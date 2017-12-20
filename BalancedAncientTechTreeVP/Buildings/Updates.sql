@@ -37,6 +37,10 @@ WHERE Tag = 'TXT_KEY_BUILDING_LIGHTHOUSE_STRATEGY';
 --UPDATE Buildings
 --SET PrereqTech = 'TECH_MYSTICISM'
 --WHERE Type = 'BUILDING_STONEHENGE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
+
+--UPDATE Buildings SET NumPoliciesNeeded = '1' WHERE Type = 'BUILDING_LASCAUX_CAVES' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
+UPDATE Buildings SET NumPoliciesNeeded = '1' WHERE Type = 'BUILDING_KNOSSOS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
+
 -----------------------------------------------------------------------
 --	VP: OPTICS: (VP OPTICS)
 -----------------------------------------------------------------------
