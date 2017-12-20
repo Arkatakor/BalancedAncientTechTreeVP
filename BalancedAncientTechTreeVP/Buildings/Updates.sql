@@ -20,7 +20,7 @@ WHERE Tag = 'TXT_KEY_BUILDING_LIGHTHOUSE_STRATEGY';
 -----------------------------------------------------------------------
 --	Removal of elder council
 -----------------------------------------------------------------------
-DELETE FROM Buildings WHERE Type = 'BUILDING_ELDER_COUNCIL';
+--DELETE FROM Buildings WHERE Type = 'BUILDING_ELDER_COUNCIL';
 --DELETE FROM BuildingClasses WHERE Type = 'BUILDINGCLASS_ELDER_COUNCIL';
 --DELETE FROM BuildingsFlavors WHERE BuildingType = 'BUILDING_ELDER_COUNCIL';
 --DELETE FROM Language_en_US WHERE Text LIKE '%ELDER_COUNCIL%';
@@ -30,9 +30,9 @@ DELETE FROM Buildings WHERE Type = 'BUILDING_ELDER_COUNCIL';
 --	VP: MYSTICISM
 -----------------------------------------------------------------------
 --	VP's 'council' is actually the grove building.
-UPDATE Buildings 
-SET PrereqTech = 'TECH_MYSTICISM' 
-WHERE BuildingClass = 'BUILDINGCLASS_GROVE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
+-- UPDATE Buildings 
+-- SET PrereqTech = 'TECH_MYSTICISM' 
+-- WHERE BuildingClass = 'BUILDINGCLASS_GROVE' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_BUILDINGS' AND Value= 1 );
 
 --UPDATE Buildings
 --SET PrereqTech = 'TECH_MYSTICISM'
