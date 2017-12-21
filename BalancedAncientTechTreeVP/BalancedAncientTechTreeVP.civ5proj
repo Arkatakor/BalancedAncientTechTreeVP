@@ -7,7 +7,7 @@
     <Guid>168e2f76-6cce-41b5-85c0-f5bdb3cb3a28</Guid>
     <ModVersion>1</ModVersion>
     <Stability>Beta</Stability>
-    <Teaser>Description</Teaser>
+    <Teaser>Adds a new level of depth the to the ancient era by adding hunting, fishing, mysticism, stone tools and wood working.</Teaser>
     <Description>Adds a new level of depth the to the ancient era with hunting, fishing, mysticism, stone tools and wood working.  Monument and shrine require these new techs.  New buildings include furrier, carpenter, fish traps, apiary and the Lascaux Caves and Knossos wonders.
 
 [h1][b]Compatibility[/b][/h1]
@@ -239,6 +239,7 @@ Also special thanks to LeeS whose resource-in-vicinity lua code came in great us
         <FileName>Lua/KnossosDebuff.lua</FileName>
       </Content>
     </ModContent>
+    <Homepage>http://steamcommunity.com/sharedfiles/filedetails/?id=1237369145&amp;searchtext=ancient+techs</Homepage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
