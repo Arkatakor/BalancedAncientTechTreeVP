@@ -1,3 +1,13 @@
+--===================================================================--
+-----------------------------------------------------------------------
+-- 					VP UPDATE FOR BOMBARDMENT FIX 
+-----------------------------------------------------------------------
+--===================================================================--
+
+INSERT INTO Technologies (Type, Cost, Description, Civilopedia, Help, Era, Trade, GoodyTech, Quote, PortraitIndex, IconAtlas, AudioIntro, AudioIntroHeader) 
+VALUES ('TECH_DEFAULT', 20, '', '', '', 'ERA_ANCIENT', 0, 0,  
+'', 0, '', '', '');
+
 -----------------------------------------------------------------------
 --	FISHING 
 -----------------------------------------------------------------------
@@ -127,6 +137,13 @@ INSERT INTO Language_en_US (Tag, Text) VALUES ('TXT_KEY_TECH_WOOD_WORKING_DESC',
 -- 					VP UPDATES 
 -----------------------------------------------------------------------
 --===================================================================--
+
+-----------------------------------------------------------------------
+--	VP Dummy Tech (for ranged bomnbardment)
+-----------------------------------------------------------------------
+--INSERT INTO Technologies (Type, Cost, Description, Civilopedia, Help, Era, Trade, GoodyTech, GridX, GridY, Quote, PortraitIndex, IconAtlas, AudioIntro, AudioIntroHeader) 
+--VALUES ('TECH_DEFAULT', 20, '', 'TXT_KEY_TECH_DEFAULT_DESC', 'TXT_KEY_TECH_DEFAULT_HELP', 'ERA_ANCIENT', 0, 0, 0, 0, 
+--'TXT_KEY_TECH_DEFAULT_QUOTE', 0, 'ANCIENT_TECH_ICON_ATLAS', 'AS2D_TECH_DEFAULT', 'AS2D_TECH_DEFAULT');
 
 -----------------------------------------------------------------------
 --	VP ARCHERY: RESETTING TEXT TO ORIGINAL VALUES

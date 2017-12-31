@@ -1,8 +1,13 @@
 -----------------------------------------------------------------------
 --	GENERAL UPDATES
 -----------------------------------------------------------------------
---	Make agricultur researchable
-DELETE FROM Civilization_FreeTechs WHERE TechType = 'TECH_AGRICULTURE';
+--===================================================================--
+-----------------------------------------------------------------------
+-- 					VP UPDATE FOR BOMBARDMENT FIX 
+-----------------------------------------------------------------------
+--===================================================================--
+--	Make agriculture researchable
+--DELETE FROM Civilization_FreeTechs WHERE TechType = 'TECH_AGRICULTURE';
 
 --	AI's have to research pottery on all difficulty levels 
 DELETE FROM HandicapInfo_AIFreeTechs WHERE TechType = 'TECH_POTTERY';

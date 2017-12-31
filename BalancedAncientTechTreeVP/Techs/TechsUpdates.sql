@@ -233,3 +233,8 @@ WHERE Tag = 'TXT_KEY_TECH_OPTICS_TITLE' AND EXISTS (SELECT * FROM COMMUNITY WHER
 UPDATE Technologies SET PortraitIndex = 18,  IconAtlas = 'TECH_ATLAS_1'
 WHERE Type = 'TECH_OPTICS' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='COMMUNITY_CORE_BALANCE_UNITS' AND Value= 1 );
 
+-----------------------------------------------------------------------
+-- 					BOMBARD RANGE FIX
+-----------------------------------------------------------------------
+UPDATE Civilization_FreeTechs SET TechType = 'TECH_DEFAULT';
+UPDATE Technologies SET BombardRange=1 WHERE Type='TECH_DEFAULT';
