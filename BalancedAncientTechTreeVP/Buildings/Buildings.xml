@@ -119,5 +119,218 @@
 			<IconAtlas>ANCIENT_BUILDING_ATLAS</IconAtlas>
 		</Row>
 		
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/4/2016 2:04:17 PM -->
+<GameData>
+	<Buildings>
+		<!--Elder Council-->
+		<Row>
+			<Type>BUILDING_ELDER_COUNCIL</Type>
+			<BuildingClass>BUILDINGCLASS_ELDER_COUNCIL</BuildingClass>
+			<Cost>20</Cost>
+			<PrereqTech>TECH_MYSTICISM</PrereqTech>
+			<Help>TXT_KEY_BUILDING_ELDER_COUNCIL_HELP</Help>
+			<Description>TXT_KEY_BUILDING_ELDER_COUNCIL</Description>
+			<Civilopedia>TXT_KEY_BUILDINGS_ELDER_COUNCIL_DESC</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_ELDER_COUNCIL_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_ELDER_COUNCIL</ArtDefineTag>
+			<ObsoleteTech>TECH_EDUCATION</ObsoleteTech>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>0</ConquestProb>
+			<HurryCostModifier>15</HurryCostModifier>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>ANCIENT_BUILDING_ATLAS</IconAtlas>
+		</Row>
+	
+		<!--Furrier-->
+		<Row>
+			<Type>BUILDING_FURRIER</Type>
+			<BuildingClass>BUILDINGCLASS_FURRIER</BuildingClass>
+			<Cost>75</Cost>
+			<PrereqTech>TECH_TRAPPING</PrereqTech>
+			<Help>TXT_KEY_BUILDING_FURRIER_HELP</Help>
+			<Description>TXT_KEY_BUILDING_FURRIER</Description>
+			<Civilopedia>TXT_KEY_BUILDINGS_FURRIER_DESC</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_FURRIER_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_FURRIER</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<Happiness>1</Happiness>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>15</HurryCostModifier>
+			<PortraitIndex>25</PortraitIndex>
+			<IconAtlas>RESOURCE_ATLAS</IconAtlas>
+		</Row>
+
+		<!--Carpenter-->
+		<Row>
+			<Type>BUILDING_CARPENTER</Type>
+			<BuildingClass>BUILDINGCLASS_CARPENTER</BuildingClass>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
+			<Cost>60</Cost>			
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<Help>TXT_KEY_BUILDING_CARPENTER_HELP</Help>
+			<Description>TXT_KEY_BUILDING_CARPENTER</Description>
+			<Civilopedia>TXT_KEY_BUILDINGS_CARPENTER_DESC</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_CARPENTER_STRATEGY</Strategy>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>			
+			<ArtDefineTag>ART_DEF_BUILDING_FORGE</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>ANCIENT_BUILDING_ATLAS</IconAtlas>
+			<PortraitIndex>2</PortraitIndex>
+		</Row>
+
+		<!--Fish Traps-->
+		<Row>
+			<Type>BUILDING_FISH_TRAPS</Type>
+			<BuildingClass>BUILDINGCLASS_FISH_TRAPS</BuildingClass>
+			<Cost>40</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_FISHING</PrereqTech>
+			<Help>TXT_KEY_BUILDING_FISH_TRAPS_HELP</Help>
+			<Description>TXT_KEY_BUILDING_FISH_TRAPS</Description>
+			<Civilopedia>TXT_KEY_BUILDINGS_FISH_TRAPS_DESC</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_FISH_TRAPS_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_FISH_TRAPS</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>15</HurryCostModifier>
+			<PortraitIndex>3</PortraitIndex>
+			<IconAtlas>ANCIENT_BUILDING_ATLAS</IconAtlas>
+		</Row>
+		
+		<!--Palisade-->
+		<Row>
+			<Type>BUILDING_PALISADE</Type>
+			<BuildingClass>BUILDINGCLASS_PALISADE</BuildingClass>
+			<Cost>40</Cost>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<ObsoleteTech>TECH_GUNPOWDER</ObsoleteTech>
+			<Help>TXT_KEY_BUILDING_PALISADE_HELP</Help>
+			<Description>TXT_KEY_BUILDING_PALISADE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_PALISADE_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PALISADE_STRATEGY</Strategy>
+			<MinAreaSize>-1</MinAreaSize>
+			<Defense>200</Defense>
+			<ExtraCityHitPoints>20</ExtraCityHitPoints>
+			<HurryCostModifier>25</HurryCostModifier>
+			<NeverCapture>true</NeverCapture>
+			<PortraitIndex>7</PortraitIndex>
+			<IconAtlas>ANCIENT_BUILDING_ATLAS</IconAtlas>
+		</Row>
+
+		<!--Apiary-->
+		<Row>
+			<Type>BUILDING_APIARY</Type>
+			<BuildingClass>BUILDINGCLASS_APIARY</BuildingClass>
+			<Cost>60</Cost>
+			<PrereqTech>TECH_TRAPPING</PrereqTech>
+			<Help>TXT_KEY_BUILDING_APIARY_HELP</Help>
+			<Description>TXT_KEY_BUILDING_APIARY</Description>
+			<Civilopedia>TXT_KEY_BUILDINGS_APIARY_DESC</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_APIARY_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_APIARY</ArtDefineTag>
+			<ObsoleteTech>TECH_EDUCATION</ObsoleteTech>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>15</HurryCostModifier>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>ANCIENT_BUILDING_ATLAS</IconAtlas>
+		</Row>
+
+		<!--Fire Pit -->
+		<Row>
+			<Type>BUILDING_FIRE_PIT</Type>
+			<BuildingClass>BUILDINGCLASS_FIRE_PIT</BuildingClass>
+			<Cost>30</Cost>			
+			<Help>TXT_KEY_BUILDING_FIRE_PIT_HELP</Help>
+			<Description>TXT_KEY_BUILDING_FIRE_PIT</Description>
+			<Civilopedia>TXT_KEY_BUILDINGS_FIRE_PIT_DESC</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_FIRE_PIT_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_FIRE_PIT</ArtDefineTag>
+			<ObsoleteTech>TECH_PHILOSOPHY</ObsoleteTech>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>15</HurryCostModifier>
+			<PortraitIndex>8</PortraitIndex>
+			<IconAtlas>ANCIENT_BUILDING_ATLAS</IconAtlas>
+		</Row>
+
+		<!--Stone Workers Hut -->
+		<!--<Row>
+			<Type>BUILDING_STONEWORKERS_HUT</Type>
+			<BuildingClass>BUILDINGCLASS_STONEWORKERS_HUT</BuildingClass>
+			<Cost>20</Cost>
+			<Help>TXT_KEY_BUILDING_STONEWORKERS_HUT_HELP</Help>
+			<Description>TXT_KEY_BUILDING_STONEWORKERS_HUT</Description>
+			<Civilopedia>TXT_KEY_BUILDINGS_STONEWORKERS_HUT_DESC</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_STONEWORKERS_HUT_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_STONEWORKERS_HUT</ArtDefineTag>
+			<ObsoleteTech>TECH_PHILOSOPHY</ObsoleteTech>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>15</HurryCostModifier>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>ANCIENT_BUILDING_ATLAS</IconAtlas>
+		</Row>-->
+
+		<!--Myth of the Sea -->
+		<!--<Row>
+			<Type>BUILDING_SEA_MYTH</Type>
+			<BuildingClass>BUILDINGCLASS_SEA_MYTH</BuildingClass>
+			<Cost>40</Cost>
+			<Help>TXT_KEY_BUILDING_SEA_MYTH_HELP</Help>
+			<Description>TXT_KEY_BUILDING_SEA_MYTH</Description>
+			<Civilopedia>TXT_KEY_BUILDINGS_SEA_MYTH_DESC</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_SEA_MYTH_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_SEA_MYTH</ArtDefineTag>
+			<Water>true</Water>
+			<ObsoleteTech>TECH_PHILOSOPHY</ObsoleteTech>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>15</HurryCostModifier>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>ANCIENT_BUILDING_ATLAS</IconAtlas>
+		</Row>-->
+
+		<!--Myth of the Beast -->
+		<!--<Row>
+			<Type>BUILDING_BEAST_MYTH</Type>
+			<BuildingClass>BUILDINGCLASS_BEAST_MYTH</BuildingClass>
+			<Cost>40</Cost>
+			<Help>TXT_KEY_BUILDING_BEAST_MYTH_HELP</Help>
+			<Description>TXT_KEY_BUILDING_BEAST_MYTH</Description>
+			<Civilopedia>TXT_KEY_BUILDINGS_BEAST_MYTH_DESC</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_BEAST_MYTH_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_BEAST_MYTH</ArtDefineTag>
+			<ObsoleteTech>TECH_PHILOSOPHY</ObsoleteTech>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>15</HurryCostModifier>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>ANCIENT_BUILDING_ATLAS</IconAtlas>
+		</Row>-->
+
+		<!--Myth of the Hero -->
+		<!--<Row>
+			<Type>BUILDING_HERO_MYTH</Type>
+			<BuildingClass>BUILDINGCLASS_HERO_MYTH</BuildingClass>
+			<Cost>40</Cost>
+			<Help>TXT_KEY_BUILDING_HERO_MYTH_HELP</Help>
+			<Description>TXT_KEY_BUILDING_HERO_MYTH</Description>
+			<Civilopedia>TXT_KEY_BUILDINGS_HERO_MYTH_DESC</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_HERO_MYTH_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_HERO_MYTH</ArtDefineTag>
+			<ObsoleteTech>TECH_PHILOSOPHY</ObsoleteTech>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>15</HurryCostModifier>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>ANCIENT_BUILDING_ATLAS</IconAtlas>
+		</Row>-->
+	</Buildings>
+</GameData>
 	</Buildings>
 </GameData>
