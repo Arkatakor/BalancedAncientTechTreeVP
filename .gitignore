@@ -10,3 +10,4 @@ BalancedAncientTechTreeVP/Techs/Techs.sql.bak
 BalancedAncientTechTreeVP/Techs/TechCoordinates.sql.bak
 BalancedAncientTechTreeVP/Buildings/BuildingsFlavors.xml.bak
 BalancedAncientTechTreeVP/Techs/TechsPrereq.sql.bak
+*.bak
